@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
+
+
+.docstyle{
+    background-image: linear-gradient(60deg,white,rgba(236, 232, 232, 0.699),rgba(253, 253, 226, 0.788));
+}
+.container-fluid{
+    background: rgb(255, 255, 255);
+}
+.nav-item{
+    
+    font-weight: bold;
+    padding: 5px;
+}
+
+.sidenav .closebtn{
+    background: none ;
+    font-size: 40px !important;
+}
+
+.navbar .openbtn:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.sidenav .closebtn:hover{
+    background: none ;
+    transform: scale(1.1);
+}
+
+.sidenav a{
+    font-size: 20px !important;
+    transition: 0.2s;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.sidenav hr{
+    color: white !important;
+}
+
+.sidenav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.nav-item:hover{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bolder;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: inset;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.nav-link{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+.modal{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    background:rgba(0, 0, 0, 0.6) !important ;
+    font-weight: bolder !important;
+}
+
+.img-td{
+    margin: 50px;
+}
+
+/* .img-td:hover{
+    transform: scale(1.04);
+    transition: 0.4s;
+} */
+
+.nav-link:hover{
+    color: aliceblue !important;
+}
+
+.carousel-images{
+    width: 1500px;
+    height: 750px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  
+
+@media screen and (max-width: 450px){
+    .carousel-images{
+        width: 375px;
+        height: 160px;
+    }
+
+    .logo{
+        width: 65px;
+        height: 27px;
+    }
+
+    .img-td{
+        width: 200px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    .sidenav .closebtn{
+        background: none ;
+    }
+
+    .card{
+        margin: 4px !important;
+        padding: 4px !important;
+    }
+
+    .services-section{
+        padding: 10px !important;
+    }
+
+    .card h5{
+        font-size: 9px !important;
+    }
+    .card h4{
+        font-size: 12px !important;
+    }
+
+    .button-style-buy{
+        margin-left: 5px !important ;
+        margin-right: 5px !important;
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+        text-align: center !important;
+        font-size: 10px !important;
+        border-radius: 5px !important;
+        font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+        background-image: linear-gradient(40deg,rgba(26, 29, 224, 0.664), rgba(52, 174, 226, 0.838));
+    }
+
+    .button-style-buy{
+        transform: scale(1.01);
+        box-shadow: 1px 1px 0px 0px;
+        transition: 0.3s;
+    }
+}
+
+.card{
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.2s;
+    padding: 10px;
+}
+
+.card .h4{
+    font-weight:100 !important;
+}
+
+.card:hover{
+    transform: scale(1.005);
+    box-shadow: 1px 3px 0px 0px;
+    transition: 0.2s;
+}
+
+.button-section{
+    display: flex;
+}
+
+.services-section{
+    /*padding: 10px;*/
+}
+
+.services-section .card{
+    background-image: linear-gradient(120deg, rgba(136, 134, 7, 0.838),rgba(2, 2, 22, 0.816)); 
+}
+
+.service-image{
+    margin: 10px;
+}
+
+hr{
+    margin: 5px !important;
+}
+
+.card h5{
+    
+    margin: 5px;
+}
+
+.button-style-overview{
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(40deg,rgba(8, 19, 71, 0.664), rgba(37, 188, 208, 0.678));
+    width: 200px !important;
+}
+
+.button-style-buy{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(40deg,rgba(8, 19, 71, 0.664), rgba(37, 188, 208, 0.678));
+    width: 200px !important;
+}
+
+.button-style-buy:hover{
+    transform: scale(1.01);
+    box-shadow: 1px 3px 1px 0px;
+    background-image: linear-gradient(40deg,rgba(37, 188, 208, 0.678),rgba(8, 19, 71, 0.664) );
+    transition: 0.3s;
+}
+
+.footer-section{
+    display: flex;
+    background-image: linear-gradient(120deg,rgba(10, 10, 10, 0.919),rgba(13, 13, 13, 0.875),black) !important;
+}
+
+.footer-element{
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+    background-color: rgba(255, 255,255, 0.26);
+}
