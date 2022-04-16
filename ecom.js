@@ -14,58 +14,43 @@ function closeNav() {
 
 /* Validation function for sign up*/
 
-function validation(){
-    var username = document.getElementById('exampleInputName').value;
-    var email= document.getElementById('exampleInputEmail1').value;
-    var contact=document.getElementById('contact').value;
-    var password=document.getElementById('exampleInputPassword1').value;
-    var confirmpassword=document.getElementById('exampleInputPassword2').value;
-    
-    var username_check= /^[A-Za-z ]{3,100}$/;
-    var email_check=/^[A-Za-z0-9.-_]{3,}@[A-Za-z0-9]{3,}[.]{1}[a-zA-Z]{1,6}$/;
-    var number_check= /^[6789][0-9]{9}$/;
-    var password_check= /^[A-Za-z0-9!@#$%^&*]{8,20}$/;
+const name= document.getElementById('exampleInputName')
+const email = document.getElementById('exampleInputEmail1')
+const password = document.getElementById('exampleInputPassword1')
+const cpwd= document.getElementById('exampleInputPassword2')
+const sgnform= document.getElementById('formsgn')
 
-    if(username_check.test(username)){
-        document.getElementById('errorname').innerHTML=" ";
-    }
-    else{
-        document.getElementById('errorname').innerHTML="Invalid Usename!!";
-        return false;
-    }
+const errorName = document.getElementById('errorname')
 
-    if(email_check.test(email)){
-        document.getElementById('errormail').innerHTML=" ";
-    }
-    else{
-        document.getElementById('errormail').innerHTML="Invalid Email!!";
-        return false;
-    }
+sgnform.addEventListener('submit', (e) => {
+  let messages = []
+  if (name.value === '' || name.value == null) {
+    messages.push('Name is required')
+    document.getElementById('errorname').textContent("Name is required!!")
+  }
 
-    if(number_check.test(contact)){
-        document.getElementById('errornumber').innerHTML=" ";
-    }
-    else{
-        document.getElementById('errornumber').innerHTML="Invalid number!!";
-        return false;
-    }
+  if (password.value.length <= 6) {
+    messages.push('Password must be longer than 6 characters')
+  }
 
-    if(password_check.test(password)){
-        document.getElementById('errorpassword').innerHTML=" ";
-    }
-    else{
-        document.getElementById('errorpassword').innerHTML="Invalid password format!!";
-        return false;
-    }
+  if (password.value.length >= 20) {
+    messages.push('Password must be less than 20 characters')
+  }
 
-    if(confirmpassword.match(password)){
-        document.getElementById('errorcpassword').innerHTML=" ";
-    }
-    else{
-        document.getElementById('errorcpassword').innerHTML="Password does not match";
-        return false;
-    }
-}
+  if (password.value === 'password') {
+    messages.push('Password cannot be password')
+  }
+
+  if(password.value !== cpwd.value){
+      messages.push('Password not matching !!')
+      document.getElementById('errorcpassword').textContent("Password not matching !!")
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+  }
+})
 
 function comingsoon(){
     alert("Coming Soon!!");

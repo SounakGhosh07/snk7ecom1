@@ -98,22 +98,20 @@
             <div class="modal-body">
             <form onsubmit="return validationlogin()" method="post" name="login-gs">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label" >Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" >
+                      <label for="exampleInputEmail5" class="form-label" >Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail5" aria-describedby="emailHelp" name="Email" >
                       <span id="errormail" style="font-size: 10px; color: red;"></span>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" name="Password" >
+                      <label for="exampleInputPassword7" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword7" name="Password" >
                       <span id="errorpassword" style="font-size: 10px; color: red;"></span>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
             <div class="modal-footer">
-            <button type="reset" class="btn btn-primary">Reset</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
+            <button type="reset" class="btn btn-primary"> Reset </button>
             </div>
         </div>
         </div>
@@ -128,39 +126,39 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form onsubmit="validation()" name="sign-up-gs" method="post">
+            <form onsubmit=" return validation()" name="sign-up-gs" method="post" id="formsgn">
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label"> Name:</label>
-                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp " name="FULL_name">
+                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp " name="FULL_name" required>
                         
                         <span id="errorname" style="font-size: 10px; color: red;"></span>
                     </div>
                     <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="EMAIL_id">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="EMAIL_id" required>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     <span id="errormail" style="font-size: 10px; color: red;"></span>
                     </div>
                     <div class="mb-3">
                         <label for="contact" class="form-label">Phone Number:</label>
-                        <input type="number" class="form-control" id="contact" name="PHONE_no">
+                        <input type="number" class="form-control" id="contact" name="PHONE_no" required>
                         
                         <span id="errornumber" style="font-size: 10px; color: red;"> </span>
                     </div>
                     <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="PASSWORD">
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="PASSWORD" required>
                     
-                    <span id="errorpassword" style="font-size: 10px; color: red;"></span>
+                    <span id="errorpwd" style="font-size: 10px; color: red;"></span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword2" class="form-label">Confirm your Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2">
+                        <input type="password" class="form-control" id="exampleInputPassword2" required>
                         
                         <span id="errorcpassword" style="font-size: 10px; color: red;"></span>
                     </div>
                     <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -689,7 +687,9 @@
 			});
 		})(bootstrap);
         </script>
-<!--Ecom js-->
+        
+        <!--Ecom js-->
+
         <script>
           /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
@@ -726,23 +726,23 @@ function closeNav() {
        
        </script>
 
-<script>
-  const scriptURL2 =
-  'https://script.google.com/macros/s/AKfycbxEMTT8ikcgwNgW3sOcNsca0FMFYrhj9IlQfKfmbgZAANjtZlKCRmzbUQj41M1tMXD0/exec'
-  const form2 = document.forms['login-gs']
+      <script>
+        const scriptURL2 =
+        'https://script.google.com/macros/s/AKfycbxEMTT8ikcgwNgW3sOcNsca0FMFYrhj9IlQfKfmbgZAANjtZlKCRmzbUQj41M1tMXD0/exec'
+        const form2 = document.forms['login-gs']
 
-  form2.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL2, {
-              method: 'POST',
-              body: new FormData(form2)
-          })
-          .then(response => alert(
-              "Succesfully Logged in!!! Reset the module and close"))
-          .catch(error => console.error('Error!', error.message))
-  })
+        form2.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL2, {
+                    method: 'POST',
+                    body: new FormData(form2)
+                })
+                .then(response => alert(
+                    "Succesfully Logged in!!! Reset the module and close"))
+                .catch(error => console.error('Error!', error.message))
+        })
 
-</script>
+      </script>
 
 
        
