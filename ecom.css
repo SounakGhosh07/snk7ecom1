@@ -293,13 +293,13 @@
 }
 
 .card{
-    color: aliceblue;
+    color: rgb(1, 15, 28);
     border-radius: 10px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     transition: 0.2s;
-    padding: 10px;
+    padding: 0px;
 }
 
 .card .h4{
@@ -321,7 +321,7 @@
 }
 
 .services-section .card{
-    background-image: linear-gradient(120deg, rgba(136, 134, 7, 0.838),rgba(2, 2, 22, 0.816)); 
+    /*background-image: linear-gradient(120deg, rgba(136, 134, 7, 0.838),rgba(2, 2, 22, 0.816)); */
 }
 
 .service-image{
@@ -391,13 +391,28 @@ hr{
 }
 
 .feedback{
-    background-color: aliceblue;
-    width: 100%;
-    text-align: center;
+    display: grid;
+    padding-left: 400px;
+}
+
+.feedback h2{
+    font-weight: 100;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 23px;
+    margin:20px 30px;
 }
 
 .feedback .col-md-6{
-    padding: 10px 50px;
+    padding: 10px 20px;
+}
+
+.feedback .form-label{
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
 }
 
 .btn{
@@ -414,6 +429,7 @@ hr{
 
 .footer-element{
     height: fit-content;
+    text-align: center;
     width: 500px;
     margin: 20px;
 }
