@@ -26,11 +26,13 @@
   <!-- Side Nav-bar-->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div></div>
-    <a href="#">About</a><hr>
-    <a href="#">Services</a><hr>
-    <a href="#">Clients</a><hr>
-    <a href="#">Contact</a><hr>
+    <a  href="#">
+      <div class="profile-pic">
+      </div>
+    </a><hr>
+    <a href="#" onclick="comingsoon()">Username: XXXX XXXX</a><hr>
+    <a href="#" class="hover" onclick="comingsoon()">About</a><hr>
+    <a href="#" class="hover" onclick="comingsoon()">See your Cart</a><hr>
   </div>
 
 <div id="main">
@@ -94,22 +96,22 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form onsubmit=" validationlogin()" method="post">
+            <form onsubmit="return validationlogin()" method="post" name="login-gs">
                     <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <span id="errormail" style="font-size: 10px; color: red;"></span>
+                      <label for="exampleInputEmail1" class="form-label" >Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email" >
+                      <span id="errormail" style="font-size: 10px; color: red;"></span>
                     </div>
                     <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                    <span id="errorpassword" style="font-size: 10px; color: red;"></span>
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="Password" >
+                      <span id="errorpassword" style="font-size: 10px; color: red;"></span>
                     </div>
-                    
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
             <div class="modal-footer">
+            <button type="reset" class="btn btn-primary">Reset</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Understood</button>
             </div>
@@ -126,7 +128,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form onsubmit="return validation()" name="sign-up-gs" method="post">
+            <form onsubmit="validation()" name="sign-up-gs" method="post">
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label"> Name:</label>
                         <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp " name="FULL_name">
@@ -703,6 +705,47 @@ function closeNav() {
   document.body.style.backgroundColor = "white" ;
 }
         </script>
+
+        <!-- Google sheet connection-->
+
+        <script>
+          const scriptURL =
+          'https://script.google.com/macros/s/AKfycbw5LQCOW77XO_epkZgLCdlysNgqjRmRW2A3BeuzH67gsmpGiuBb6F5H84-wtFbetnPL/exec'
+          const form = document.forms['sign-up-gs']
+       
+          form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, {
+                      method: 'POST',
+                      body: new FormData(form)
+                  })
+                  .then(response => alert(
+                      "Succesfully Registered!!! Reset the sign-up module for other signups"))
+                  .catch(error => console.error('Error!', error.message))
+          })
+       
+       </script>
+
+<script>
+  const scriptURL2 =
+  'https://script.google.com/macros/s/AKfycbxEMTT8ikcgwNgW3sOcNsca0FMFYrhj9IlQfKfmbgZAANjtZlKCRmzbUQj41M1tMXD0/exec'
+  const form2 = document.forms['login-gs']
+
+  form2.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL2, {
+              method: 'POST',
+              body: new FormData(form2)
+          })
+          .then(response => alert(
+              "Succesfully Logged in!!! Reset the module and close"))
+          .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+
+
+       
     </section>
 
 </body>
