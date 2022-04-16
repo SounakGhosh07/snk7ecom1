@@ -233,6 +233,57 @@
     
 }
 
+@media (min-width: 451px) and (max-width: 699px){
+    .button-style-buy{
+        height: fit-content !important;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .button-style-buy:hover{
+        height: fit-content !important;
+        font-size: 12px !important;
+        font-weight: 100;
+    }
+    .button-style-overview{
+        height: fit-content;
+        font-size: 12px;
+        font-weight: 100;
+    }
+    .button-style-overview:hover{
+        height: fit-content !important;
+        font-size: 12px !important;
+        font-weight: 100;
+    }
+    .img-td{
+        width: 400px;
+        height: 100px;
+        margin: 10px;
+    }
+    .carousel-images{
+        height: 250px !important;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 950px){
+    .button-style-buy{
+        height: fit-content;
+        font-size: 12px;
+        font-weight: 1000;
+    }
+    .button-style-overview{
+        height: fit-content;
+        font-size: 12px;
+        font-weight: 1000;
+    }
+    .img-td{
+        width: 650px;
+        margin: 10px;
+    }
+    .carousel-images{
+        height: 300px !important;
+    }
+}
+
 .card{
     color: aliceblue;
     border-radius: 10px;
