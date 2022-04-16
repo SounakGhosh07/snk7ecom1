@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Nanum+Gothic:wght@700&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
 
 .docstyle{
     background-image: linear-gradient(60deg,white,rgba(236, 232, 232, 0.699),rgba(253, 253, 226, 0.788));
@@ -264,6 +264,14 @@
     }
 }
 
+.footer-section a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+    color: bisque;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
 @media (min-width: 700px) and (max-width: 1000px){
     .button-style-buy{
         height: fit-content;
@@ -373,16 +381,41 @@ hr{
 
 }
 
+.fdbckinput{
+    height: 150px;
+    
+}
+
+.fdbckinput1{
+    height: 50px;
+}
+
+.feedback{
+    background-color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+
+.feedback .col-md-6{
+    padding: 10px 50px;
+}
+
+.btn{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
 .footer-section{
     display: flex;
-    background-image: linear-gradient(120deg,rgba(10, 10, 10, 0.919),rgba(13, 13, 13, 0.875),black) !important;
+    justify-content: center;
+    background: rgba(1, 30, 41, 0.811);
 }
 
 .footer-element{
-    height: 500px;
+    height: fit-content;
     width: 500px;
     margin: 20px;
-    background-color: rgba(255, 255,255, 0.26);
 }
 
 
