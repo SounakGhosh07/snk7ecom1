@@ -5,7 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Nanum+Gothic:wght@700&family=Oswald:wght@200&family=Poppins:wght@300&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Lato&family=Nanum+Gothic:wght@700&family=Noto+Sans&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Lato&family=Montserrat&family=Nanum+Gothic:wght@700&family=Noto+Sans&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Fira+Sans+Condensed:wght@300&family=Lato&family=Montserrat&family=Nanum+Gothic:wght@700&family=Noto+Sans&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Fira+Sans+Condensed:wght@300&family=Fjalla+One&family=Lato&family=Montserrat&family=Nanum+Gothic:wght@700&family=Noto+Sans&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
 
 .docstyle{
     background-image: linear-gradient(60deg,white,rgba(236, 232, 232, 0.699),rgba(253, 253, 226, 0.788));
@@ -114,6 +115,8 @@
     height: 750px;
 }
 
+
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -166,6 +169,14 @@
     .carousel-images{
         width: 375px;
         height: 160px;
+    }
+
+    .header-product{
+        font-size: 30px !important;
+    }
+
+    .service-image{
+        height: 150px !important;
     }
 
     .logo{
@@ -287,12 +298,12 @@
 
 @media (min-width: 700px) and (max-width: 1000px){
     .button-style-buy{
-        height: fit-content;
+        height: fit-content !important;
         font-size: 12px;
         font-weight: 1000;
     }
     .button-style-overview{
-        height: fit-content;
+        height: fit-content !important;
         font-size: 12px;
         font-weight: 1000;
     }
@@ -313,7 +324,7 @@
     font-weight: 900 !important;
     transition: 0.2s;
     padding: 0px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #fbeec1;
 }
 
 .card .h4{
@@ -358,7 +369,7 @@ hr{
     text-align: center;
     border-radius: 5px;
     font-weight: 900;
-    background-image: linear-gradient(90deg ,rgba(243, 235, 17, 0.66) 50% , rgba(133, 120, 6, 0.689) 50%);
+    background-image: linear-gradient(90deg ,#659dbd 50% , #bc968a 50%);
     background-size: 400px 80px;
     font-family: 'montserrat' sans-serif;
     width: 200px !important;
@@ -449,7 +460,9 @@ hr{
     margin: 20px;
 }
 
-
+.service-image{
+    height: 300px;
+}
 
 .profile-pic{
     text-align: center;
@@ -492,3 +505,55 @@ hr{
 .features h5{
     font-size: 15px;
 }
+
+.header-product{
+    color: #021825; margin: 30px; font-family: 'Fjalla One', sans-serif; font-weight: 500; font-size: 70px; text-align: center;
+    position: relative;
+    margin: 30px;
+}
+
+/* .header-product::after{
+    content: '';
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 2px;
+    background: #e3a405;
+    left: 0px;
+    bottom: 5px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform: scale(0,1);
+    transition: 0.4s;
+    
+    /*margin-top: 100px !important;
+}*/
+
+/* .header-product:hover::after{
+    
+    transform: scale(1,1);
+    transition: 0.4s;
+}
+
+.header-product::before{
+    content: '';
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 2px;
+    background: #e3a405;
+    left: 0px;
+    top: 5px !important;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform: scale(0,1);
+    transition: 0.4s;
+    margin-top: 100px !important;
+}
+
+.header-product:hover::before{
+    
+    transform: scale(1,1);
+    transition: 0.4s;
+}  */
