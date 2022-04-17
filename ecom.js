@@ -56,7 +56,5 @@ function comingsoon(){
     alert("Coming Soon!!");
 }
 
-function comingsoon(){
-  alert("Coming Soon!!");
-}
+
 

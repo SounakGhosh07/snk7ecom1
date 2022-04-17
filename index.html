@@ -36,7 +36,42 @@
   </div>
 
 <div id="main">
-    
+  <!-- BUY-MODAL-->
+  <div class="modal fade" id="buymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Payment page</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Billing address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            </div>
+            <label for="exampleInputEmail1" class="form-label">Select the payment method</label>
+            <select class="form-select" aria-label="Default select example" >
+              
+              <!-- <option selected > </option> -->
+              <option value="1">Cash on delivery</option>
+              <option value="2">Debit/Card Card</option>
+              <option value="3">UPI</option>
+            </select><br>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+              <label class="form-check-label" for="exampleCheck1">I agree to the terms and conditions</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Proceed to payment</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <!-- Nav-bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -221,8 +256,8 @@
                   <hr>
                   <h5>RS. 55,999</h5>
                   <div class="button-section">
-                    <button class="button-style-buy">BUY NOW</button>
-                    <button class="button-style-overview">SEE MORE</button>
+                    <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                    <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                   </div>
                   <!-- <a href="" class="btn-style">Overview</a> -->
               </div>
@@ -238,8 +273,8 @@
               <hr>
               <h5>RS. 55,999</h5>
               <div class="button-section">
-                <button class="button-style-buy">BUY NOW</button>
-                <button class="button-style-overview">SEE MORE</button>
+                <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
               </div>
               <!-- <a href="" class="btn-style">Overview</a> -->
             </div>
@@ -255,8 +290,8 @@
               <hr>
               <h5>RS. 55,999</h5>
               <div class="button-section">
-                <button class="button-style-buy">BUY NOW</button>
-                <button class="button-style-overview">SEE MORE</button>
+                <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
               </div>
               <!-- <a href="" class="btn-style">Overview</a> -->
             </div>
@@ -272,8 +307,8 @@
               <hr>
               <h5>RS. 55,999</h5>
               <div class="button-section">
-                <button class="button-style-buy">BUY NOW</button>
-                <button class="button-style-overview">SEE MORE</button>
+                <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
               </div>
               <!-- <a href="" class="btn-style">Overview</a> -->
             </div>
@@ -289,8 +324,8 @@
               <hr>
               <h5>RS. 55,999</h5>
               <div class="button-section">
-                <button class="button-style-buy">BUY NOW</button>
-                <button class="button-style-overview">SEE MORE</button>
+                <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
               </div>
               <!-- <a href="" class="btn-style">Overview</a> -->
             </div>
@@ -311,8 +346,8 @@
                     <hr>
                     <h5>RS. 55,999</h5>
                     <div class="button-section">
-                      <button class="button-style-buy">BUY NOW</button>
-                      <button class="button-style-overview">SEE MORE</button>
+                      <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                      <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                     </div>
                     <!-- <a href="" class="btn-style">Overview</a> -->
                 </div>
@@ -328,8 +363,8 @@
                 <hr>
                 <h5>RS. 55,999</h5>
                 <div class="button-section">
-                  <button class="button-style-buy">BUY NOW</button>
-                  <button class="button-style-overview">SEE MORE</button>
+                  <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                  <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                 </div>
                 <!-- <a href="" class="btn-style">Overview</a> -->
               </div>
@@ -345,8 +380,8 @@
                 <hr>
                 <h5>RS. 55,999</h5>
                 <div class="button-section">
-                  <button class="button-style-buy">BUY NOW</button>
-                  <button class="button-style-overview">SEE MORE</button>
+                  <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                  <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                 </div>
                 <!-- <a href="" class="btn-style">Overview</a> -->
               </div>
@@ -362,8 +397,8 @@
                 <hr>
                 <h5>RS. 55,999</h5>
                 <div class="button-section">
-                  <button class="button-style-buy">BUY NOW</button>
-                  <button class="button-style-overview">SEE MORE</button>
+                  <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                  <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                 </div>
                 <!-- <a href="" class="btn-style">Overview</a> -->
               </div>
@@ -379,8 +414,8 @@
                 <hr>
                 <h5>RS. 55,999</h5>
                 <div class="button-section">
-                  <button class="button-style-buy">BUY NOW</button>
-                  <button class="button-style-overview" href="">SEE MORE</button>
+                  <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                  <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                 </div>
                 <!-- <a href="" class="btn-style">Overview</a> -->
               </div>
@@ -401,8 +436,8 @@
                       <hr>
                       <h5>RS. 55,999</h5>
                       <div class="button-section">
-                        <button class="button-style-buy">BUY NOW</button>
-                        <button class="button-style-overview" target="_blank" onclick="document.location='https://sounakghosh07.github.io/snk7ecom/laptop.html'" >SEE MORE</button>
+                        <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                        <button class="button-style-overview" target="_blank" onclick="document.location='laptop1.html'" >SEE MORE</button>
                       </div>
                       <!-- <a href="" class="btn-style">Overview</a> -->
                   </div>
@@ -418,8 +453,8 @@
                   <hr>
                   <h5>RS. 55,999</h5>
                   <div class="button-section">
-                    <button class="button-style-buy">BUY NOW</button>
-                    <button class="button-style-overview">SEE MORE</button>
+                    <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                    <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                   </div>
                   <!-- <a href="" class="btn-style">Overview</a> -->
                 </div>
@@ -435,8 +470,8 @@
                   <hr>
                   <h5>RS. 55,999</h5>
                   <div class="button-section">
-                    <button class="button-style-buy">BUY NOW</button>
-                    <button class="button-style-overview">SEE MORE</button>
+                    <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                    <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                   </div>
                   <!-- <a href="" class="btn-style">Overview</a> -->
                 </div>
@@ -452,8 +487,8 @@
                   <hr>
                   <h5>RS. 55,999</h5>
                   <div class="button-section">
-                    <button class="button-style-buy">BUY NOW</button>
-                    <button class="button-style-overview">SEE MORE</button>
+                    <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                    <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                   </div>
                   <!-- <a href="" class="btn-style">Overview</a> -->
                 </div>
@@ -469,8 +504,8 @@
                   <hr>
                   <h5>RS. 55,999</h5>
                   <div class="button-section">
-                    <button class="button-style-buy">BUY NOW</button>
-                    <button class="button-style-overview">SEE MORE</button>
+                    <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                    <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                   </div>
                   <!-- <a href="" class="btn-style">Overview</a> -->
                 </div>
@@ -491,8 +526,8 @@
                         <hr>
                         <h5>RS. 55,999</h5>
                         <div class="button-section">
-                          <button class="button-style-buy">BUY NOW</button>
-                          <button class="button-style-overview">SEE MORE</button>
+                          <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                          <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                         </div>
                         <!-- <a href="" class="btn-style">Overview</a> -->
                     </div>
@@ -508,8 +543,8 @@
                     <hr>
                     <h5>RS. 55,999</h5>
                     <div class="button-section">
-                      <button class="button-style-buy">BUY NOW</button>
-                      <button class="button-style-overview">SEE MORE</button>
+                      <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                      <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                     </div>
                     <!-- <a href="" class="btn-style">Overview</a> -->
                   </div>
@@ -525,8 +560,8 @@
                     <hr>
                     <h5>RS. 55,999</h5>
                     <div class="button-section">
-                      <button class="button-style-buy">BUY NOW</button>
-                      <button class="button-style-overview">SEE MORE</button>
+                      <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                      <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                     </div>
                     <!-- <a href="" class="btn-style">Overview</a> -->
                   </div>
@@ -542,8 +577,8 @@
                     <hr>
                     <h5>RS. 55,999</h5>
                     <div class="button-section">
-                      <button class="button-style-buy">BUY NOW</button>
-                      <button class="button-style-overview">SEE MORE</button>
+                      <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                      <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                     </div>
                     <!-- <a href="" class="btn-style">Overview</a> -->
                   </div>
@@ -559,8 +594,8 @@
                     <hr>
                     <h5>RS. 55,999</h5>
                     <div class="button-section">
-                      <button class="button-style-buy">BUY NOW</button>
-                      <button class="button-style-overview">SEE MORE</button>
+                      <button class="button-style-buy" data-bs-toggle="modal" data-bs-target="#buymodal">BUY NOW</button>
+                      <button class="button-style-overview" onclick="document.location='laptop1.html'">SEE MORE</button>
                     </div>
                     <!-- <a href="" class="btn-style">Overview</a> -->
                   </div>
