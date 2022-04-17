@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Nanum+Gothic:wght@700&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Nanum+Gothic:wght@700&family=Oswald:wght@200&family=Poppins:wght@300&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Lato&family=Nanum+Gothic:wght@700&family=Noto+Sans&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Lato&family=Montserrat&family=Nanum+Gothic:wght@700&family=Noto+Sans&family=Oswald:wght@200&family=Roboto+Condensed&display=swap');
 
 
 .docstyle{
@@ -467,4 +468,27 @@ hr{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 200;
     font-size: 20px;
+}
+
+.footer-section{
+    bottom: 0px !important;
+    margin-top: 20px;
+}
+
+.features{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    color: rgb(2, 39, 41);
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.features h4{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.features h5{
+    font-size: 15px;
 }

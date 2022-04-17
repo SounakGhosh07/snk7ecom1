@@ -109,17 +109,64 @@
                 </button>
             </div>
         </div>
+        
         <!-- Product description-->
         <div class="description col-md-6">
             <h1 class="product-title">BRAND-X L1</h1><hr style="color: brown;">
             <h2 class="product-desc">Unique assimilation of design and performance in a never before seen deal. </h2>
-            <h4 class="features">Features-</h4>
-            <h5>
-              <ul>RAM 16GB</ul>
-              <ul>512 GB SSD</ul>
-              <ul>4GB GRAPHICS CARD</ul>
-            </h5>
+          <div class="features">    
+            <h4>Features-</h4><hr style="color: rgb(255, 113, 4); font-weight: 800;">
+              <h5>
+                <ul>RAM 16GB</ul>
+                <ul>512 GB SSD</ul>
+                <ul>4GB GRAPHICS CARD</ul>
+                <ul>15.6 INCH FULL HD DISPLAY</ul>
+                <ul>120 HZ SCREEN REFRESH RATE</ul>
+              </h5><hr style="color: rgb(255, 113, 4); font-weight: 800;">
+              <button type="button" class="btn btn-primary button-style-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                BUY NOW
+              </button>
+          </div>
         </div>
+        
+
+    </div>
+
+    <!-- BUY-MODAL-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Payment page</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Billing address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              </div>
+              <label for="exampleInputEmail1" class="form-label">Select the payment method</label>
+              <select class="form-select" aria-label="Default select example" >
+                
+                <!-- <option selected > </option> -->
+                <option value="1">Cash on delivery</option>
+                <option value="2">Debit/Card Card</option>
+                <option value="3">UPI</option>
+              </select><br>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">I agree to the terms and conditions</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Proceed to payment</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer section-->
