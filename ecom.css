@@ -277,6 +277,9 @@
     .carousel-images{
         height: 250px !important;
     }
+    .header-product{
+        font-size: 30px;
+    }
 }
 
 .service-image{
@@ -308,6 +311,9 @@
     }
     .carousel-images{
         height: 300px !important;
+    }
+    .header-product{
+        font-size: 35px;
     }
 }
 
