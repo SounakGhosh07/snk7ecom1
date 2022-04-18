@@ -229,12 +229,7 @@
         height: fit-content !important;
     }
 
-    .button-style-buy{
-        transform: scale(1.01);
-        box-shadow: 1px 1px 0px 0px;
-        transition: 0.3s;
-    }
-
+    
     .button-style-overview{
         margin-left: 5px !important ;
         margin-right: 5px !important;
