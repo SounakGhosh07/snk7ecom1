@@ -24,11 +24,13 @@
     <!-- Side Nav-bar-->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div></div>
-    <a href="#">About</a><hr>
-    <a href="#">Services</a><hr>
-    <a href="#">Clients</a><hr>
-    <a href="#">Contact</a><hr>
+    <a  href="#">
+      <div class="profile-pic">
+      </div>
+    </a><hr>
+    <a href="#" onclick="comingsoon()">Username: XXXX XXXX</a><hr>
+    <a href="#" class="hover" onclick="comingsoon()">About</a><hr>
+    <a href="#" class="hover" onclick="comingsoon()">See your Cart</a><hr>
   </div>
 
 <!-- Main-part-->
@@ -81,6 +83,92 @@
           </div>
         </div>
     </nav>
+
+    <!-- Login modal -->
+    <div class="modal" id="login-modal" tabindex="-1" aria-labelledby="staticBackdropLabel">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <form onsubmit="return validationlogin()" method="post" name="login-gs">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail5" class="form-label" >Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail5" aria-describedby="emailHelp" name="Email" >
+                    <span id="errormail" style="font-size: 10px; color: red;"></span>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword7" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword7" name="Password" >
+                    <span id="errorpassword" style="font-size: 10px; color: red;"></span>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+          <button type="reset" class="btn btn-primary"> Reset </button>
+          </div>
+      </div>
+      </div>
+  </div>
+
+  <!--Sign-up Modal -->
+  <div class="modal" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Sign-up for first time</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <form onsubmit=" return validation()" name="sign-up-gs" method="post" id="formsgn">
+                  <div class="mb-3">
+                      <label for="exampleInputName" class="form-label"> Name:</label>
+                      <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp " name="FULL_name" required>
+                      
+                      <span id="errorname" style="font-size: 10px; color: red;"></span>
+                  </div>
+                  <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="EMAIL_id" required>
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <span id="errormail" style="font-size: 10px; color: red;"></span>
+                  </div>
+                  <div class="mb-3">
+                      <label for="contact" class="form-label">Phone Number:</label>
+                      <input type="number" class="form-control" id="contact" name="PHONE_no" required>
+                      
+                      <span id="errornumber" style="font-size: 10px; color: red;"> </span>
+                  </div>
+                  <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="PASSWORD" required>
+                  
+                  <span id="errorpwd" style="font-size: 10px; color: red;"></span>
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPassword2" class="form-label">Confirm your Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword2" required>
+                      
+                      <span id="errorcpassword" style="font-size: 10px; color: red;"></span>
+                  </div>
+                  <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
+              </form>
+          </div>
+          <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+          </div> -->
+      </div>
+      </div>
+  </div>
 
     <!--Body-section-->
     <div class="row">
@@ -299,6 +387,44 @@
 			});
 		})(bootstrap);
         </script>
+
+         <!-- Google sheet connection-->
+
+         <script>
+          const scriptURL =
+          'https://script.google.com/macros/s/AKfycbw5LQCOW77XO_epkZgLCdlysNgqjRmRW2A3BeuzH67gsmpGiuBb6F5H84-wtFbetnPL/exec'
+          const form = document.forms['sign-up-gs']
+       
+          form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, {
+                      method: 'POST',
+                      body: new FormData(form)
+                  })
+                  .then(response => alert(
+                      "Succesfully Registered!!! Reset the sign-up module for other signups"))
+                  .catch(error => console.error('Error!', error.message))
+          })
+       
+       </script>
+
+      <script>
+        const scriptURL2 =
+        'https://script.google.com/macros/s/AKfycbxEMTT8ikcgwNgW3sOcNsca0FMFYrhj9IlQfKfmbgZAANjtZlKCRmzbUQj41M1tMXD0/exec'
+        const form2 = document.forms['login-gs']
+
+        form2.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL2, {
+                    method: 'POST',
+                    body: new FormData(form2)
+                })
+                .then(response => alert(
+                    "Succesfully Logged in!!! Reset the module and close"))
+                .catch(error => console.error('Error!', error.message))
+        })
+
+      </script>
     </section>
 </body>
 </html>
