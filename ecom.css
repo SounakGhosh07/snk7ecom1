@@ -171,6 +171,10 @@
         height: 160px;
     }
 
+    .hero-image{
+        height: 600px !important;
+    }
+
     .header-product{
         font-size: 30px !important;
     }
@@ -511,6 +515,33 @@ hr{
     color: #021825; margin: 30px; font-family: 'Fjalla One', sans-serif; font-weight: 500; font-size: 70px; text-align: center;
     position: relative;
     margin: 30px;
+}
+
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images-p/hunters-race-MYbhN8KaaEc-unsplash.jpg");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 /* .header-product::after{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>t-shirts for women</title>
+    <title>About us</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="ecom.css">
 </head>
 <body>
-
     <!-- Side Nav-bar-->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -37,38 +36,38 @@
 <div id="main">
     <!-- Nav-bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container-fluid">
-        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776; &nbsp; &nbsp;</span>
-        <a class="navbar-brand" onclick="openNav()"><img class="logo" src="MART.png" alt="logo" height="60px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="https://sounakghosh07.github.io/snk7ecom/index.html">Home</a>
+        <div class="container-fluid">
+          <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776; &nbsp; &nbsp;</span>
+          <a class="navbar-brand" onclick="openNav()"><img class="logo" src="MART.png" alt="logo" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://sounakghosh07.github.io/snk7ecom/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#login-modal">
+                    Login
+                </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
+                <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Sign-up
+                </a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#login-modal">
-                  Login
-              </a>
-          </li>
-          <li class="nav-item">
-              <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Sign-up
-              </a>
-          </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-  </nav>
+    </nav>
 
     <!-- Login modal -->
     <div class="modal" id="login-modal" tabindex="-1" aria-labelledby="staticBackdropLabel">
@@ -155,118 +154,40 @@
         </div>
         </div>
     </div>
+    <!--Body section of hero-->
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Hi, this is Sounak Ghosh.</h1><br><hr style="color: aliceblue;"><br>
+          <h3>I'm a beginner front-end developer and this is my first professional website. Hope you like it.</h3><br><hr style="color: aliceblue;"><br>
+          <p>I'm currently studying in Jadavpur University pursuing BE in Computer Science and Engineering.</p><hr style="color: aliceblue;">
+          
+        </div>
+      </div>
 
-    <!--Body-section-->
-    <div class="row">
-        <!--Sliding pictures of products-->
-        <div class="picture col-md-6">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images-p/disruptivo-DokE5D4GbDk-unsplash.jpg" class="d-block w-100 carousel-images" alt="..." href="#">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images-p/brooke-cagle-D1W3rQGaNhI-unsplash.jpg" class="d-block w-100 carousel-images" alt="..." href="#">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images-p/vanessa-serpas-YHRilCaogJw-unsplash.jpg" class="d-block w-100 carousel-images" alt="..." href="#">
-                  </div>
-                  
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <!-- Footer section-->
+        <section class="footer-section">
+            <div class="footer-element">
+              <h4> <a href="" class="footer-links"> <i class="fa-brands fa-facebook" onclick="comingsoon()"></i> Find us at facebook</a></h4><hr style="color: bisque;">
+              <h4> <a target="blank" href="https://wa.me/918910272026" class="footer-links"> <i class="fa-brands fa-whatsapp"></i> Connect via whatsapp</a></h4><hr style="color: bisque;">
+              <h4> <a target="blank" href="mailto:sounak.gth7@gmail.com" class="footer-links"> <i class="fa-solid fa-envelope"></i> Email the customer service </a></h4><hr style="color: bisque;">
             </div>
-        </div>
-        
-        <!-- Product description-->
-        <div class="description col-md-6">
-            <h1 class="product-title">T-SHIRTS FOR WOMEN</h1><hr style="color: brown;">
-            <h2 class="product-desc">COMFORTABLE CLOTHING FOR WOMEN OF ALL AGES </h2>
-          <div class="features">    
-            <h4>Features-</h4><hr style="color: rgb(255, 113, 4); font-weight: 800;">
-              <h5>
-                <p>Comfortable and fashionable clothing for all your works.</p>
-                
-                <hr style="color: rgb(255, 113, 4); font-weight: 800;">
-                <ul style="font-size: 30px;" >RS. 499</ul>
-              </h5><hr style="color: rgb(255, 113, 4); font-weight: 800;">
-              <button type="button" class="btn btn-primary button-style-buy" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                BUY NOW
-              </button>
-          </div>
-        </div>
-        
-
-    </div>
-
-    <!-- BUY-MODAL-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Payment page</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Billing address</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-              </div>
-              <label for="exampleInputEmail1" class="form-label">Select the payment method</label>
-              <select class="form-select" aria-label="Default select example" >
-                
-                <!-- <option selected > </option> -->
-                <option value="1">Cash on delivery</option>
-                <option value="2">Debit/Card Card</option>
-                <option value="3">UPI</option>
-              </select><br>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                <label class="form-check-label" for="exampleCheck1">I agree to the terms and conditions</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Proceed to payment</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer section-->
-    <section class="footer-section">
-      <div class="footer-element">
-        <h4> <a href="" class="footer-links"> <i class="fa-brands fa-facebook" onclick="comingsoon()"></i> Find us at facebook</a></h4><hr style="color: bisque;">
-        <h4> <a target="blank" href="https://wa.me/918910272026" class="footer-links"> <i class="fa-brands fa-whatsapp"></i> Connect via whatsapp</a></h4><hr style="color: bisque;">
-        <h4> <a target="blank" href="mailto:sounak.gth7@gmail.com" class="footer-links"> <i class="fa-solid fa-envelope"></i> Email the customer service </a></h4><hr style="color: bisque;">
-      </div>
-
-      <div class="footer-element">
-        <h4> <a href="index.html" class="footer-links" > Home</a></h4><hr style="color: bisque;">
-
-        <h4> <a target="blank" href="" class="footer-links" onclick="comingsoon()"> <i class="fa-solid fa-blog"></i> Our blogs</a></h4><hr style="color: bisque;">
-        <h4>  <a target="blank" href="" onclick="comingsoon()"> <i class="fa-solid fa-calendar-check"></i> Check out the Events</a></h4><hr style="color: bisque;">
-        <br>
-        <h4> <a href="#"> &copy; Sounak Ghosh </a></h4>
-      </div>
-
-      <div class="footer-element">
-        <h4> <a target="blank" href="" class="footer-links" onclick="comingsoon()"> More products</a></h4><hr style="color: bisque;">
-        <h4>  <a target="blank" href="" onclick="comingsoon()"> The developers</a></h4><hr style="color: bisque;">
-        <h4>  <a target="blank" href="" onclick="comingsoon()"> Local stores</a></h4><hr style="color: bisque;">
-      </div>
-
-    </section>
-</div> 
+      
+            <div class="footer-element">
+              <h4> <a href="index.html" class="footer-links" > Home</a></h4><hr style="color: bisque;">
+      
+              <h4> <a target="blank" href="" class="footer-links" onclick="comingsoon()"> <i class="fa-solid fa-blog"></i> Our blogs</a></h4><hr style="color: bisque;">
+              <h4>  <a target="blank" href="" onclick="comingsoon()"> <i class="fa-solid fa-calendar-check"></i> Check out the Events</a></h4><hr style="color: bisque;">
+              <br>
+              <h4> <a href="#"> &copy; Sounak Ghosh </a></h4>
+            </div>
+      
+            <div class="footer-element">
+              <h4> <a target="blank" href="" class="footer-links" onclick="comingsoon()"> More products</a></h4><hr style="color: bisque;">
+              <h4>  <a target="blank" href="" onclick="comingsoon()"> The developers</a></h4><hr style="color: bisque;">
+              <h4>  <a target="blank" href="" onclick="comingsoon()"> Local stores</a></h4><hr style="color: bisque;">
+            </div>
+      
+          </section>
 
     <!--script part--> 
     <section>
@@ -408,6 +329,10 @@
           })
   
         </script>
+
+         
+
+
     </section>
 </body>
 </html>
